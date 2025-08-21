@@ -8,5 +8,9 @@ I focus on:
 - Complexity analysis (time & space)
 
 ## Problems Solved
-- [Two Sum](problems/two-sum.md)
-- [Repeat String](problems/repeat-string.md)
+
+| Problem        | Source    | Link |
+|----------------|-----------|------|
+| Two Sum        | LeetCode  | [two-sum.md](problems/two-sum.md) |
+| Repeat String  | Codewars  | [repeat-string.md](problems/repeat-string.md) |
+
