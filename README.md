@@ -13,4 +13,4 @@ I focus on:
 |----------------|-----------|------|
 | Two Sum        | LeetCode  | [two-sum.md](problems/two-sum.md) |
 | Repeat String  | Codewars  | [repeat-string.md](problems/repeat-string.md) |
-
+| Remove String Spaces | Codewars | [problems/remove-string-spaces.md](problems/remove-string-spaces.md) |
