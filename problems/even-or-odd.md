@@ -13,19 +13,37 @@ Input: 7 → Output: "Odd"
 
 ---
 
-## Solution (JavaScript)
+## Steps to Solve
+1. **Understand the question**  
+   - Input: integer  
+   - Output: `"Even"` or `"Odd"`  
 
-```js
-function evenOdd(number) {
-  return number % 2 === 0 ? 'Even' : 'Odd';
-}
-```
+2. **Think of the logic**  
+   - `number % 2 === 0 → Even`  
+   - `number % 2 !== 0 → Odd`  
+
+3. **Write pseudocode**  
+   - If remainder is 0, return `"Even"`.  
+   - Else return `"Odd"`.  
 
 ---
 
-## Explanation
-- We use the modulo operator `%` to check divisibility by 2.  
-- If `number % 2 === 0`, the number is even → return `"Even"`.  
-- Otherwise, return `"Odd"`.  
+## Solutions
 
-**Complexity:** O(1) — constant time check.
+### Solution 1 – if/else version
+```javascript
+function evenOdd(number) {
+  if (number % 2 === 0) {
+    return 'Even';
+  } else {
+    return 'Odd';
+  }
+}
+
+---
+### Solution 2 – ternary operator version
+
+function evenOdd(number) {
+  return number % 2 === 0 ? 'Even' : 'Odd';
+}
+
