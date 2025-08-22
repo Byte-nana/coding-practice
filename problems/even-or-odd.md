@@ -1,36 +1,37 @@
 # Even or Odd
 
-**Source:** Codewars  
+## Source
+This challenge is from **Codewars**.
 
 ## Problem
 Create a function that takes an integer as an argument and returns `"Even"` for even numbers or `"Odd"` for odd numbers.
 
-**Examples**
-```
-Input: 2 → Output: "Even"  
-Input: 7 → Output: "Odd"
-```
+### Examples
+- Input: `2` → Output: `"Even"`
+- Input: `7` → Output: `"Odd"`
+- Input: `0` → Output: `"Even"`
 
 ---
 
 ## Steps to Solve
-1. **Understand the question**  
-   - Input: integer  
-   - Output: `"Even"` or `"Odd"`  
+1. **Understand the problem**  
+   - The function accepts one integer parameter.  
+   - If the number is divisible by 2, return `"Even"`.  
+   - Otherwise, return `"Odd"`.  
 
-2. **Think of the logic**  
-   - `number % 2 === 0 → Even`  
-   - `number % 2 !== 0 → Odd`  
+2. **Plan the logic**  
+   - Use the modulo operator `%`.  
+   - `number % 2 === 0` means the number is even.  
+   - Otherwise, it is odd.  
 
-3. **Write pseudocode**  
-   - If remainder is 0, return `"Even"`.  
-   - Else return `"Odd"`.  
+3. **Write the code**  
+   - First try with a standard `if/else`.  
+   - Then write a shorter alternative with a ternary operator.  
 
 ---
 
-## Solutions
+## Solution 1 – Using if/else
 
-### Solution 1 – if/else version
 ```javascript
 function evenOdd(number) {
   if (number % 2 === 0) {
@@ -39,12 +40,25 @@ function evenOdd(number) {
     return 'Odd';
   }
 }
+```
 
 ---
 
-### Solution 2 – ternary operator version
+## Solution 2 – Using ternary operator
 
+The ternary operator allows a shorter form of the condition.
+
+```javascript
 function evenOdd(number) {
   return number % 2 === 0 ? 'Even' : 'Odd';
 }
+```
+
+---
+
+## Explanation
+- `%` (modulo) gives the remainder after division.  
+- If `number % 2 === 0`, then `number` divides evenly by 2 → it’s even.  
+- If the remainder is not 0, then it’s odd.  
+
 
