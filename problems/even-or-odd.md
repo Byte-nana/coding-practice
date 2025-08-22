@@ -41,6 +41,7 @@ function evenOdd(number) {
 }
 
 ---
+
 ### Solution 2 – ternary operator version
 
 function evenOdd(number) {
